@@ -1,37 +1,34 @@
-## Welcome to GitHub Pages
+# 碧蓝幻想翻译
+## 前言
+插件的原理是通过在游戏的网页中注入 javascript 脚本，修改网络请求中返回的文本，以及添加部分 CSS（样式），来实现汉化。
 
-You can use the [editor on GitHub](https://github.com/Arcelibs/blhx/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+我们并不清楚 Cygames 对汉化插件的态度，预计往后也不会有明确的支持或反对。
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+因此在使用之前请自行判断使用汉化插件会不会有风险，如果觉得有则不要使用。
 
-### Markdown
+## 简介
+使用：https://github.com/biuuu/BLHXFY/blob/master/src/README.md
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+加入翻译：https://github.com/BLHXFY-Group/BLHXFY/tree/master/data
 
-```markdown
-Syntax highlighted code block
+代码和翻译数据都部署在 github pages 上，使用了 cloudflare 的 CDN。
 
-# Header 1
-## Header 2
-### Header 3
+## Devlopment
 
-- Bulleted
-- List
+```bash
+# 全局安装 yarn
+npm install -g yarn
 
-1. Numbered
-2. List
+# 用 yarn 安装模块
+yarn install
 
-**Bold** and _Italic_ and `Code` text
+# 构建用户脚本
+yarn build
 
-[Link](url) and ![Image](src)
+# 打包CSV和构建用户脚本，并push到当前repo的gh-pages分支
+yarn deploy
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Arcelibs/blhx/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+## License
+The code is [MIT](https://github.com/biuuu/BLHXFY/blob/master/LICENSE) licensed,
+but the translation text has another License. see [details](https://github.com/biuuu/BLHXFY/tree/master/data)
